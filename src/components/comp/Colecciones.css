@@ -1,0 +1,51 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: #fff;
+    
+}
+.container .titulo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.container .contenido{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #fff;
+    grid-gap: 20px;
+}
+.container .contenido .a{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.container .contenido .b{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.container .contenido .c{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.container .contenido .c{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.foto{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 15px;
+}

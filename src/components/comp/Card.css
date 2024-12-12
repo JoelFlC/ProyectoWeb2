@@ -1,0 +1,88 @@
+/* Contenedor principal para las tarjetas */
+.cardv-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+
+    row-gap: 40px; /* Espacio adicional entre filas */
+    padding: 20px;
+    justify-items: center; /* Centra las tarjetas horizontalmente */
+  }
+  
+  
+  /* Estilo individual de las tarjetas */
+  .cardv {
+    width: 265px; /* Ancho fijo para uniformidad */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+  }
+  
+  .cardv:hover {
+    transform: translateY(-2px); /* Eleva más al pasar el cursor */
+
+  }
+  
+  /* Imagen uniforme */
+  .cardv-image img {
+    width: 100%; /* La imagen llena el ancho de la tarjeta */
+    height: 275px; /* Altura fija más grande */
+    object-fit: contain; /* Mantiene proporción de las imágenes */
+    background-color: #f9f9f9; /* Fondo para imágenes pequeñas */
+    padding: 10px; /* Espaciado interno para las imágenes */
+    display: block;
+  }
+  
+  /* Contenido de la tarjeta */
+  .cardv-content {
+    padding: 15px;
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Descripción en mayúsculas */
+  .cardv-description {
+    font-size: 14px;
+    color: #555; /* Texto más visible */
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+  }
+  
+  /* Título del producto */
+  .cardv-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #222; /* Texto más oscuro */
+  }
+  
+  /* Precio destacado */
+  .cardv-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946; /* Color rojo intenso */
+    margin: 10px 0;
+  }
+  
+  /* Responsivo: Ajusta columnas según el ancho */
+  @media (max-width: 1200px) {
+    .cardv-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cardv-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cardv-container {
+      grid-template-columns: 1fr; /* 1 columna */
+    }
+  }
+  

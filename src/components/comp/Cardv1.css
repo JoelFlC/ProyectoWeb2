@@ -1,0 +1,122 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .card-content {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .card-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+  }
+  .card-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+
+  }
+  .card-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFFFFF !important;
+    text-transform: uppercase; 
+    grid-column: 1/4;
+    grid-row: 2/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+ 
+  
+  .card-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #CCCCCC;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-button {
+    background-color: #FFFFFF;
+    color: #1F2229;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  
+  .card-button:hover {
+    background-color: #CCCCCC;
+  }
+  
+  .card-image {
+    grid-column: 2 / 3;
+    text-align: right;
+    padding-right: 40px;
+  }
+  
+  .card-image img {
+    max-width: 400px;
+    height: auto;
+
+  }
+  
+  @media (max-width: 768px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      text-align: center;
+    }
+  
+    .card-content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .card-image {
+      grid-column: 1 / 2;
+      text-align: center;
+    }
+  }
+  

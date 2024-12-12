@@ -1,0 +1,120 @@
+.cardd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cardd-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .cardd-content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .cardd-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+  }
+  .cardd-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+
+  }
+  .cardd-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff !important;
+    text-transform: uppercase; 
+    grid-column: 1/4;
+    grid-row: 2/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+  .cardd-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #CCCCCC;
+    grid-column: 1/4;
+    grid-row: 3/4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardd-button {
+    background-color: #FFFFFF;
+    color: #1F2229;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  
+  .cardd-button:hover {
+    background-color: #CCCCCC;
+  }
+  
+  .cardd-image {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+    padding-left: 120px;
+  }
+  
+  .cardd-image img {
+    max-width: 400px;
+    height: auto;
+
+  }
+  
+  @media (max-width: 768px) {
+    .cardd-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      text-align: center;
+    }
+  
+    .cardd-content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .cardd-image {
+      grid-column: 1 / 2;
+      text-align: center;
+    }
+  }
+  

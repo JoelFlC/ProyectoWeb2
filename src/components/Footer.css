@@ -1,0 +1,125 @@
+.footer {
+    padding: 50px 20px;
+    background-color: #1F2229;
+    color: #EEEEEE;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.link {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 200px;
+}
+
+.link h3 {
+    color: #FFF9FA;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.link ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link ul li {
+    margin-bottom: 10px;
+}
+
+.link ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.link ul li a:hover {
+    color: #a4bcd0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.facebook {
+    background-image: url('./facebook.jpg');
+}
+
+.twitter {
+    background-image: url('/twitter.png');
+}
+
+.instagram {
+    background-image: url('/Instagram.jpg');
+}
+
+.tiktok {
+    background-image: url('/tiktok.webp');
+}
+
+.subscribe-button {
+    background-color: #FF4500;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #FF6347;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #a4bcd0;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #FFF9FA;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
